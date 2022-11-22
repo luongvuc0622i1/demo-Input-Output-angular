@@ -1,0 +1,8 @@
+<h1>Parent Input</h1>
+<button (click)="increment()">Increment</button>
+<button (click)="decrement()">Decrement</button>
+<app-child [countI]="Counter"></app-child>
+<hr>
+<h1>Parent Output</h1>
+<h4>Count Parent: {{countParent}}</h4>
+<app-child (countChanged)="countChangedHandle($event)"></app-child>
